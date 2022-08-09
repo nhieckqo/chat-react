@@ -49,7 +49,7 @@ class App extends Component {
         room: 'vacad',
     }
 
-    client = new W3CWebSocket('ws://127.0.0.1:8000/ws/chat/' + this.state.room + '/');
+    client = new W3CWebSocket('ws://nixnax-chat-app.herokuapp.com/ws/chat/' + this.state.room + '/');
 
     onButtonClicked = (e) => {
         this.client.send(JSON.stringify({
