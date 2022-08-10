@@ -58,6 +58,7 @@ class App extends Component {
             name: this.state.name
         }));
         this.state.value = ''
+        // this.setState()
         e.preventDefault();
     }
 
